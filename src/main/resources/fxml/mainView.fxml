@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="500.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projectpremier.itunesplaylistexporter.controllers.mainViewController">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#quitClick" text="Quit" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+            <VBox alignment="CENTER" layoutX="50.0" layoutY="25.0" spacing="10.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" maxWidth="550.0" minWidth="550.0" prefWidth="550.0" spacing="10.0">
+                     <children>
+                        <Label contentDisplay="RIGHT" text="ITunes Directory:" />
+                        <TextField fx:id="nItunesFolderText" editable="false" minWidth="300.0" />
+                        <Button fx:id="nItunesDirectoryButton" mnemonicParsing="false" onAction="#chooseItunesDirClick" text="..." />
+                        <Button fx:id="nAutoDetectButton" layoutX="453.0" layoutY="10.0" mnemonicParsing="false" onAction="#autoDetectClick" text="Auto Detect" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" maxWidth="550.0" minWidth="550.0" prefWidth="550.0" spacing="10.0">
+                     <children>
+                        <Label contentDisplay="RIGHT" text="Save Directory:" />
+                        <TextField fx:id="nSaveFolderText" editable="false" minWidth="300.0" />
+                        <Button fx:id="nSaveDirectoryButton" mnemonicParsing="false" onAction="#chooseSaveDirClick" text="..." />
+                     </children>
+                  </HBox>
+                  <Button fx:id="nFetchButton" layoutX="234.0" layoutY="292.0" mnemonicParsing="false" onAction="#fetchDataClick" text="Fetch">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <ListView fx:id="nPlaylistList" editable="true" maxHeight="275.0" maxWidth="300.0" minHeight="275.0" minWidth="300.0" prefHeight="275.0" prefWidth="300.0" />
+                  <Button fx:id="nTransferButton" disable="true" mnemonicParsing="false" onAction="#transferClick" text="Transfer">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+      </children>
+    </AnchorPane>
+      <HBox prefHeight="100.0" prefWidth="200.0" />
+      <Label fx:id="nStatusLabel" />
+  </children>
+</VBox>
