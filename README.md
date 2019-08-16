@@ -1,14 +1,10 @@
-# Itunes Playlist Export Utility
+# Utility to export Itunes Playlists
 
-TODO: Write a description
+A JavaFX-based utility that reads through iTunes playlists and copies the mp3 files from the itunes directorys.
 
 ## Installation
-
-TODO: Describe the installation process
-
-## Usage
-
-TODO: Write usage instructions
+1. Download source code
+2. Build using minimum Java Development Kit 7 (JDK)
 
 ## Contributing
 
@@ -18,20 +14,16 @@ TODO: Write usage instructions
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
-## History
-
-TODO: Write history
-
 ## Credits
-
-**Angel Torres**
-+ [http://twitter.com/yungamazing](http://twitter.com/yungamazing)
+3breadt/dd-plist
+A java library providing support for ASCII, XML and binary property lists. 
+https://github.com/3breadt/dd-plist
 
 ## License
 
 The MIT License (MIT)
 
-Copyright (c) 2018 Angel Torres
+Copyright (c) 2018 A-Trs Development. AngelTorres.xyz
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
